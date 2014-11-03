@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
     <link href='style.css' rel='stylesheet' type='text/css'>
@@ -10,21 +11,15 @@
 </head>
 
 <body>
-<div class="welcome">
-	<p>This sample is using Hammer.js 1.0.3.<br/>Drag and drop, zoom with pinch and rotate the picture.</p>
-	<p>Press SHIFT + MOUSE to emulate Multitouch.</p>
-</div>
 <div id="zoomwrapper1">
     <div id="zoom1" class="zoomProps" >
         <div id="rect1" class="polaroid">
-            <img src="pic1.jpg" alt="" width="200" height="200" />
-            <span>Coco</span>
+            <img src="landscape.png" alt="" width="200" height="200" />
         </div>
     </div>
 </div>
-<div id="emptyBox">Get the source code on <a href="http://www.creativedroplets.com">CreativeDroplets.com</a></div>
 </body>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="lib/jquery-1.11.1.min.js"></script>
 <script src="lib/hammer.min.js"></script>
 <script src="lib/jquery.hammer.min.js"></script>
 <script src="lib/hammer.fakemultitouch.js"></script>

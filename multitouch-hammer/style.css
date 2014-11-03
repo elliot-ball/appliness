@@ -55,7 +55,7 @@
 		  
 		  .polaroid{
 	
-			text-align: center;
+		/*	text-align: center;
 			  
 			padding: 10px 10px 25px 10px;
 		background: #eee;
@@ -68,7 +68,7 @@
 		font-size:24px;
 		color:#000;
 		padding-bottom:10px;
-		text-shadow:#333;
+		text-shadow:#333;*/
 		  }
 		  
 		  .upSky{
@@ -79,16 +79,6 @@
 	
 		  
 		  body{
-				background:url(bg.jpg);  
+				/*background:url(bg.jpg);  */
 		  }
-		  
-		  .welcome{
-			  font-family: 'bree-serif', serif;
-			font-size:24px;
-			color:#FFF;
-			
-        text-shadow: 1px 1px 2px #363636;
-        filter: dropshadow(color=#363636, offx=1, offy=1);
-        margin-left:15px;
-		margin-top:10px;
-		  }
+	

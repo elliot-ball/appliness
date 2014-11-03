@@ -1,8 +1,5 @@
 // JavaScript Document
 
-
-	
-
    if(!Hammer.HAS_TOUCHEVENTS && !Hammer.HAS_POINTEREVENTS) {
             Hammer.plugins.showTouches();
    }
@@ -23,7 +20,8 @@
 		lastPosX=0, lastPosY=0,
 		bufferX=0, bufferY=0,
         scale=1, last_scale,
-        rotation= 1, last_rotation, dragReady=0;
+        // rotation= 0, last_rotation, 
+        dragReady=0;
 
     hammertime.on('touch drag dragend transform', function(ev) {
         elemRect = document.getElementById('zoom1');
@@ -36,7 +34,7 @@
 		switch(ev.type) {
             case 'touch':
                 last_scale = scale;
-                last_rotation = rotation;
+                // last_rotation = rotation;
 				
                 break;
 
@@ -46,7 +44,7 @@
                 break;
 
             case 'transform':
-                rotation = last_rotation + ev.gesture.rotation;
+                // rotation = 0;
                 scale = Math.max(1, Math.min(last_scale * ev.gesture.scale, 10));
                 break;
 				
@@ -58,8 +56,7 @@
 		
         var transform =
                 "translate3d("+posX+"px,"+posY+"px, 0) " +
-                "scale3d("+scale+","+scale+", 0) " +
-                "rotate("+rotation+"deg) ";
+                "scale3d("+scale+","+scale+", 0) ";
 			
         elemRect.style.transform = transform;
         elemRect.style.oTransform = transform;
